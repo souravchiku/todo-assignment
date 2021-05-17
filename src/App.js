@@ -47,19 +47,6 @@ export default function App() {
     setBool(false);
   }
 
-  function completedButton(id, item) {
-    // setCompleted([...completed].concat(item))
-    console.log(item);
-
-    let updatedlist = [...todos].map((item) => {
-      if (item.id === id) {
-        item.completed = true;
-      }
-    });
-    setTodos(updatedlist);
-    console.log(item);
-  }
-
   function handleradio(item) {
     setBool(true);
     let key = item.id;
@@ -126,7 +113,13 @@ export default function App() {
         })}
       </div>
       {bool ? (
-        <div style={{ borderTop: "1px solid grey" }}>
+        <div
+          style={{
+            borderTop: "1px solid grey",
+            display: "flex",
+            flexDirection: "column"
+          }}
+        >
           <h5 id="completed">Completed</h5>
           {completed.map((val) => {
             return (
