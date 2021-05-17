@@ -56,3 +56,8 @@ h4 {
   background-color: #e3e8f0;
   padding: 0 20px;
 }
+
+#completed {
+  color: grey;
+  padding: 20px 30px;
+}
