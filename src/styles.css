@@ -61,3 +61,8 @@ h4 {
   color: grey;
   padding: 20px 30px;
 }
+
+.input-field input[type="text"]:focus {
+  border-bottom: 1px solid rgb(168, 116, 221) !important;
+  box-shadow: 0 1px 0 0 rgb(168, 116, 221) !important;
+}
