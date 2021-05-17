@@ -15,7 +15,7 @@ export default function App() {
       setTodos(loadedTodos);
       setCompleted(completed2);
     }
-    if (completed2) {
+    if (completed2.length >= 1) {
       setBool(true);
     }
   }, []);
