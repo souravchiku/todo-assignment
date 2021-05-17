@@ -4,6 +4,19 @@ export default function App() {
   const [todos, setTodos] = useState([]);
   const [todo, setTodo] = useState("");
 
+  useEffect(() => {
+    let json = localStorage.getItem("todos");
+    let loadedTodos = JSON.parse(json);
+    if (loadedTodos) {
+      setTodos(loadedTodos);
+    }
+  }, []);
+
+  useEffect(() => {
+    let json = JSON.stringify(todos);
+    localStorage.setItem("todos", json);
+  }, [todos]);
+
   function handlesubmit(e) {
     e.preventDefault();
 
