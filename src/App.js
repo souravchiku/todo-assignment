@@ -66,7 +66,6 @@ export default function App() {
       </div>
       <div
         style={{
-          border: "1px solid black",
           display: "flex",
           flexDirection: "column"
         }}
