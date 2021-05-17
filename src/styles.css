@@ -1,0 +1,58 @@
+body {
+  background-color: #9266ff;
+}
+
+.App {
+  background-color: #fff;
+  min-height: 600px;
+  width: 600px;
+  margin: 60px auto;
+  border-radius: 2%;
+  /* font-family: sans-serif;
+  text-align: center; */
+}
+#to-do-form input {
+  width: 300px;
+  border: 0;
+  border-bottom: 1px solid grey;
+  height: 50px;
+  padding: 0 20px;
+  margin: 20px;
+}
+
+#to-do-form input ::placeholder {
+  /* color: rgba(266, 255, 255, 0.5) */
+}
+
+.input-field label {
+  color: #9266ff;
+  font-size: 20px;
+  padding: 0 20px;
+}
+
+.input-field {
+  padding: 0 20px;
+  margin: 20px;
+}
+h4 {
+  padding: 20px 30px;
+}
+
+#email:focus + #DITBT {
+  opacity: 0;
+}
+
+.todo {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-text {
+  /* border: 1px solid grey; */
+  width: 500px;
+  height: 60px;
+  margin: 10px 50px;
+  border-radius: 20px;
+  background-color: #e3e8f0;
+  padding: 0 20px;
+}
